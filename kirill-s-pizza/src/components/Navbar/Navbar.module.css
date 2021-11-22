@@ -1,0 +1,134 @@
+.navbar{
+    background-color: #FFFFF0;
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    border-bottom: double #696969;
+   
+}
+.logo{
+
+    background-image: url("../../images/Logo.png");
+    background-repeat: no-repeat;
+    background-size: 110px;
+    width: 110px;
+    margin-left: 70px;
+    transition: 0.7s;
+}
+.logo:hover{
+    transition: 0.7s;
+    transform: scale(1.2);
+}
+.links{
+    display: flex;
+    align-items: center;
+    margin-right: 70px;
+}
+.link{
+    margin-left: 20px;
+    text-decoration: none;
+    color: black;
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 700;
+}
+.link:hover{
+    opacity: 0.7;
+}
+.basket_box{
+    display: flex;
+}
+.basket{
+    margin-left: 10px;
+    visibility: hidden;
+}
+.button{
+    visibility: hidden;
+}
+
+.navbar_hidden_active{visibility: hidden;}
+.links_hidden{visibility: hidden;}
+.basket_box_hidden{visibility: hidden;}
+.basket_hidden{visibility: hidden;}
+.button_active{visibility: hidden;}
+
+@media screen and (max-width: 760px) {
+    .logo{
+        background-size: 90px;
+        width: 90px;
+        margin-left: 50px;
+    } 
+    .links{
+        margin-right: 20px;
+    }
+    .link{
+        margin-left: 5px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .logo{
+        background-size: 110px;
+        width: 110px;
+        margin-left: 70px;
+        transition: 0.7s;
+    }
+ .links{
+        visibility: hidden;
+    }
+.button{
+    visibility: visible;
+    position: fixed;
+    right: 30px;
+    top:30px;
+    background-image: url("../../images/menu-4-32.png");
+    background-repeat: no-repeat;
+    background-size: 32px;
+    width: 32px;
+    height: 32px;
+    border: none;
+    transition: 0.7s;
+}
+.button_active{
+    visibility: visible;
+    position: fixed;
+    right: 30px;
+    top:30px;
+    background-image: url("../../images/close-window-32.png");
+    background-repeat: no-repeat;
+    background-size: 32px;
+    width: 32px;
+    height: 32px;
+    border: none;
+    transition: 0.7s;
+}
+.navbar_hidden{
+    visibility: visible;
+    background-color: black;
+    position: absolute;
+    height: 410px;
+    width: 300px;
+    right: 0;
+    border-radius: 0 0 0 30px;
+
+}
+.links_hidden{
+    visibility: visible;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.link_hidden{
+    color: white;
+    margin-top: 50px;
+    text-decoration: none;
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 700;
+    
+}
+.basket_box_hidden{
+    visibility: visible;
+    margin-top: 50px;
+}
+.link_hidden:hover{
+    opacity: 0.7;}
+
+}
