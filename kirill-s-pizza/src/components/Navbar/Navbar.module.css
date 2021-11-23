@@ -4,7 +4,8 @@
     justify-content: space-between;
     height: 100px;
     border-bottom: double #696969;
-   
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 .logo{
 
@@ -23,6 +24,7 @@
     display: flex;
     align-items: center;
     margin-right: 70px;
+
 }
 .link{
     margin-left: 20px;
@@ -30,6 +32,7 @@
     color: black;
     font-family: 'Oxygen', sans-serif;
     font-weight: 700;
+    text-shadow: 1px 1px 1px #cec8c8ab;
 }
 .link:hover{
     opacity: 0.7;
@@ -45,7 +48,17 @@
     visibility: hidden;
 }
 
-.navbar_hidden_active{visibility: hidden;}
+.navbar_hidden_active{
+    visibility: hidden;
+    position: absolute;
+    height: 410px;
+    width: 300px;
+    right: 0;
+    border-radius: 0 0 0 30px;
+    transition: 0.8s;
+    transform: translateX(100%);
+    z-index: 2;
+}
 .links_hidden{visibility: hidden;}
 .basket_box_hidden{visibility: hidden;}
 .basket_hidden{visibility: hidden;}
@@ -99,6 +112,7 @@
     height: 32px;
     border: none;
     transition: 0.7s;
+
 }
 .navbar_hidden{
     visibility: visible;
@@ -108,6 +122,10 @@
     width: 300px;
     right: 0;
     border-radius: 0 0 0 30px;
+    transition: 0.8s;
+    transform: translateX(10px);
+    overflow: hidden;
+    z-index: 5;
 
 }
 .links_hidden{
@@ -115,6 +133,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 }
 .link_hidden{
     color: white;
@@ -122,7 +141,6 @@
     text-decoration: none;
     font-family: 'Oxygen', sans-serif;
     font-weight: 700;
-    
 }
 .basket_box_hidden{
     visibility: visible;
