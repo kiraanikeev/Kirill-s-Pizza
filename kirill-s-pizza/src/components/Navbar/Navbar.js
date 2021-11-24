@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import styles from "./Navbar.module.css"
+import Slider from './../Slider/Slider';
 function Navbar() {
 
 const[clicked, setClicked] = useState(false)
@@ -24,20 +25,17 @@ console.log(clicked)
         <section className={clicked ? styles.navbar_hidden : styles.navbar_hidden_active}>
 
             <div className={styles.links_hidden}>
-            <NavLink to='/home' className={styles.link_hidden}>Home</NavLink>
-            <NavLink to='/menu' className={styles.link_hidden}>Menu</NavLink>
-            <NavLink to='/about' className={styles.link_hidden}>About us</NavLink>
-            <NavLink to='/contacts' className={styles.link_hidden}>Contacts</NavLink>
+            <NavLink to='/home' className={styles.link_hidden} onClick={()=>setClicked(!clicked)}>Home</NavLink>
+            <NavLink to='/menu' className={styles.link_hidden} onClick={()=>setClicked(!clicked)}>Menu</NavLink>
+            <NavLink to='/about' className={styles.link_hidden} onClick={()=>setClicked(!clicked)}>About us</NavLink>
+            <NavLink to='/contacts' className={styles.link_hidden} onClick={()=>setClicked(!clicked)}>Contacts</NavLink>
             <div className={styles.basket_box_hidden}>
-            <NavLink to='/basket' className={styles.link_hidden}>Basket</NavLink>
+            <NavLink to='/basket' className={styles.link_hidden} onClick={()=>setClicked(!clicked)}>Basket</NavLink>
             <div className={styles.basket_hidden}>0</div>
             </div>
             </div>
-
-
-
         </section>
-
+        <Slider clicked={clicked}/>
         </div>
     )
 }

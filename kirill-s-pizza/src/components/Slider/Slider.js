@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import dataSlider from './DataSlider'
 import styles from "./Slider.module.css"
 import BtnSlider from "./BtnSlider"
-function Slider() {
+function Slider(props) {
 
 const  [slideIndex, setSlideIndex] = useState(1)
 
@@ -40,7 +40,7 @@ const prevSlide = () => {
     }
 }
     return (
-        <div className={styles.containerSlider}>
+        <div className={props.clicked ? styles.containerSliderClicked : styles.containerSlider}>
           {dataSlider.map((obj,index)=>{
               return(
                   <div
@@ -49,7 +49,7 @@ const prevSlide = () => {
                     className={slideIndex === index + 1 ? styles.activeAnim : styles.slide }
                     >
                         <img src={process.env.PUBLIC_URL + `/Imgs/${index + 1}.jpg`} />
-   
+                        <h3 className={styles.title}>{obj.title}</h3>
                   </div>
               )
           })
