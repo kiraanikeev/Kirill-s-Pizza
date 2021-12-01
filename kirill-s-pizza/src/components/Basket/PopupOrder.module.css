@@ -10,7 +10,6 @@
         right: 0;
         align-items: center;
         justify-content: center;
-        position: absolute;
         visibility: visible;
         opacity: 1;
         transition: visibility 0.5s, opacity 0.5s linear; 
@@ -46,7 +45,7 @@
     position: fixed;
     top: -40px;
     right: -40px;
-    background-image: url("../../../images/x.png");
+    background-image: url("../../images/x.png");
     background-repeat: no-repeat;
     background-size: 40px;
     box-sizing: border-box;

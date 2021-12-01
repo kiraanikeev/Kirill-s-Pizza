@@ -7,8 +7,8 @@ function Contacts() {
 
   const [popupContacts, setPopupContscts] = useState(false);
   const[namePopup, setName] = useState('')
-  const[emailPopup,setEmail] = useState('')
-
+  const[emailPopup, setEmail] = useState('')
+  const[message, setMessage] = useState('')
 const submitHandle=(e)=>{
   e.preventDefault();
   setPopupContscts(true)
@@ -23,16 +23,22 @@ const submitHandle=(e)=>{
           
             <form id="contact-form" onSubmit={submitHandle} className={styles.formArea}>
           <label className={styles.label}>Full Name</label>
-          <input name="name" placeholder="Enter full name..." type="text" className={styles.input} onChange={(e)=>setName(e.target.value)}/>
+          <input name="name" placeholder="Enter full name..." type="text" 
+          className={styles.input} onChange={(e)=>setName(e.target.value)}
+          required minLength={2} maxLength={40} value={namePopup}/>
           <label className={styles.label}>Email</label>
-          <input name="email" placeholder="Enter email..." type="email" className={styles.input} onChange={(e)=>setEmail(e.target.value)}/>
+          <input name="email" placeholder="Enter email..." type="email" 
+          className={styles.input} onChange={(e)=>setEmail(e.target.value)}
+          required minLength={2} maxLength={40} value={emailPopup}/>
           <label className={styles.label}>Message</label>
           <textarea
             rows="6"
             placeholder="Enter message..."
             name="message"
-            required
+            required minLength={2} maxLength={200}
             className={styles.textarea}
+            onChange={(e)=>setMessage(e.target.value)}
+            value={message}
           ></textarea>
           <button type="submit" className={styles.button}>Send</button>
         </form>
@@ -56,7 +62,7 @@ const submitHandle=(e)=>{
             </div>
             <div className={styles.img}></div>
             <PopupContacts popupContacts={popupContacts} setPopupContscts={setPopupContscts} namePopup={namePopup} 
-            setName={setName} setEmail={setEmail} emailPopup={emailPopup}/>
+            setName={setName} setEmail={setEmail} emailPopup={emailPopup} setMessage={setMessage}/>
         </div>
     )
 }

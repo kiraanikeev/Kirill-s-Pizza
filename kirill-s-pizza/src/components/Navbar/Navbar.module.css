@@ -24,8 +24,8 @@
     display: flex;
     align-items: center;
     margin-right: 70px;
-
 }
+
 .link{
     margin-left: 20px;
     text-decoration: none;
@@ -42,7 +42,24 @@
 }
 .basket{
     margin-left: 10px;
-    visibility: hidden;
+    background-color: rgb(223, 114, 114);
+    color: rgb(255, 255, 255);
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 700;
+    width: 20px;
+    text-align: center;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    border-left: 2px solid #000;
+    padding-right: 3px;
+    
+}
+.basket_box{
+    background-color: rgb(253, 23, 23, 0.2);
+    border-radius: 20px 20px;
+    height: 20px;
+    margin-left: 10px;
+ 
 }
 .button{
     visibility: hidden;
@@ -52,6 +69,7 @@
 .button:hover{
     opacity: 0.8;
 }
+
 .navbar_hidden{
     height: 0;
 }
@@ -70,6 +88,7 @@
 .links_hidden{visibility: hidden;}
 .basket_box_hidden{visibility: hidden;}
 .basket_hidden{visibility: hidden;}
+
 .button_active{
     visibility: hidden;
     cursor: pointer;
@@ -77,6 +96,17 @@
 .button_active:hover{
     opacity: 0.8;
 }
+.disabled{
+    text-decoration-color:gray;
+    margin-left: 20px;
+    text-decoration: none;
+    border:none;
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    background-color: #fff;
+}
+
 
 @media screen and (max-width: 760px) {
     .logo{
@@ -90,6 +120,8 @@
     .link{
         margin-left: 5px;
     }
+    .disabled{
+        margin-left: 0;}
 }
 @media screen and (max-width: 500px) {
     .logo{
@@ -113,6 +145,7 @@
     height: 32px;
     border: none;
     transition: 0.7s;
+    background-color: white;
 }
 .button_active{
     visibility: visible;
@@ -156,6 +189,18 @@
     font-weight: 700;
     
 }
+.link_hidden_disabled{
+    color: gray;
+    text-decoration: none;
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 700;
+    background-color: black;
+    text-decoration: none;
+    border:none;
+    font-size: 17px;
+    margin-top: 50px;
+}
+
 .basket_box_hidden{
     visibility: visible;
     margin-top: 50px;

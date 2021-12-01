@@ -6,9 +6,9 @@ grid-template-areas:
 "subTitle subTitle"
 "formArea  contacts"
 "formArea img";
-    grid-gap: 30px;
+    grid-gap: 20px;
     grid-template-rows: 50px 40px 1fr 1fr;
-    grid-template-columns: 1fr 1fr
+    grid-template-columns: 3fr 2fr
 }
 
 .title{
@@ -78,7 +78,7 @@ background-color: white;
     max-width: 300px;
     align-self: center;
     transition: 0.7s;
-    justify-self:end;
+    /* justify-self:end; */
     padding: 20px;
     
 }
@@ -95,6 +95,7 @@ background-color: white;
     max-width: 400px;
     margin-right: 15px;
     margin-bottom: 10px;
+    transform: rotate(3deg);
 }
 .contact{
     font-family: 'Oxygen', sans-serif;
