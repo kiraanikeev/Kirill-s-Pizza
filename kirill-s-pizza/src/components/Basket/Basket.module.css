@@ -159,7 +159,6 @@ opacity: 0.3;
  
 }
 .formArea{
-    grid-area: formArea;
     display: flex;
     flex-direction: column;
     width: 400px;
@@ -193,4 +192,33 @@ border-bottom: 1px solid black;
         background-color: black;
         color: white;
         transition: 0.7s;
+    }
+    @media screen and (max-width: 620px) {
+        .goods{
+            flex-direction: column;
+            margin-left: 5px;
+        }
+        .flex{
+            display: flex;
+            justify-content: space-around;
+            width: 300px;
+            margin-top: 20px;
+justify-content: space-around;
+        }
+        .input{
+            width: 270px;  
+        }
+        .formArea{
+
+            margin: 5px 5px;
+        }
+            }
+
+
+
+
+    @media screen and (max-width: 500px) {
+.basketHeader{
+            margin-bottom: 100px;
+        };
     }

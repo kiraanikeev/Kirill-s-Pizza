@@ -53,7 +53,6 @@ function Basket() {
                 <div className={styles.flex}>
                 <img className={styles.img} src={process.env.PUBLIC_URL + `/Imgs/sort_of_pizza/${item.image}`} />
                 <h4 className={styles.name}>{item.name}</h4>
-       
                 </div>
             <div className={styles.flex}>
             <span className={styles.cost}>{item.cost*item.amount} p</span>

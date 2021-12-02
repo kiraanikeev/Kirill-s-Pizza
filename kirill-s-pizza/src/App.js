@@ -8,6 +8,7 @@ import Contacts from './components/Contacts/Contacts';
 import Home from './components/Home/Home';
 import Menu from './components/Menu/Menu';
 import {BasketContext} from './context';
+import Footer from './components/Footer/Footer';
 
 
 
@@ -41,6 +42,7 @@ function App() {
 <Redirect to="/"/>
 </Switch>
 </BasketContext.Provider>
+<Footer/>
     </div>
   );
 }

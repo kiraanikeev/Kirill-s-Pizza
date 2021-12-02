@@ -6,6 +6,7 @@
     border-bottom: double #696969;
     margin-bottom: 0;
     padding-bottom: 0;
+   
 }
 .logo{
 
@@ -15,6 +16,7 @@
     width: 110px;
     margin-left: 70px;
     transition: 0.7s;
+
 }
 .logo:hover{
     transition: 0.7s;
@@ -24,6 +26,7 @@
     display: flex;
     align-items: center;
     margin-right: 70px;
+
 }
 
 .link{
@@ -113,6 +116,7 @@
         background-size: 90px;
         width: 90px;
         margin-left: 50px;
+        z-index:5;
     } 
     .links{
         margin-right: 20px;
@@ -129,6 +133,8 @@
         width: 110px;
         margin-left: 70px;
         transition: 0.7s;
+        margin-left: 5px;
+        
     }
  .links{
         visibility: hidden;
