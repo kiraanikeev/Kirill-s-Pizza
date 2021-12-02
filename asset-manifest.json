@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/Kirill-s-Pizza/static/css/main.9b994215.chunk.css",
+    "main.js": "/Kirill-s-Pizza/static/js/main.4fb55235.chunk.js",
+    "main.js.map": "/Kirill-s-Pizza/static/js/main.4fb55235.chunk.js.map",
+    "runtime-main.js": "/Kirill-s-Pizza/static/js/runtime-main.68f32e8e.js",
+    "runtime-main.js.map": "/Kirill-s-Pizza/static/js/runtime-main.68f32e8e.js.map",
+    "static/js/2.790ac296.chunk.js": "/Kirill-s-Pizza/static/js/2.790ac296.chunk.js",
+    "static/js/2.790ac296.chunk.js.map": "/Kirill-s-Pizza/static/js/2.790ac296.chunk.js.map",
+    "static/js/3.a709a3d0.chunk.js": "/Kirill-s-Pizza/static/js/3.a709a3d0.chunk.js",
+    "static/js/3.a709a3d0.chunk.js.map": "/Kirill-s-Pizza/static/js/3.a709a3d0.chunk.js.map",
+    "index.html": "/Kirill-s-Pizza/index.html",
+    "static/css/main.9b994215.chunk.css.map": "/Kirill-s-Pizza/static/css/main.9b994215.chunk.css.map",
+    "static/js/2.790ac296.chunk.js.LICENSE.txt": "/Kirill-s-Pizza/static/js/2.790ac296.chunk.js.LICENSE.txt",
+    "static/media/Contacts.module.css": "/Kirill-s-Pizza/static/media/map.1cc39ac0.jpg",
+    "static/media/Home.module.css": "/Kirill-s-Pizza/static/media/pizzaHome.bd762fec.jpg",
+    "static/media/About.module.css": "/Kirill-s-Pizza/static/media/povar.99f02f5a.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.68f32e8e.js",
+    "static/js/2.790ac296.chunk.js",
+    "static/css/main.9b994215.chunk.css",
+    "static/js/main.4fb55235.chunk.js"
+  ]
+}
