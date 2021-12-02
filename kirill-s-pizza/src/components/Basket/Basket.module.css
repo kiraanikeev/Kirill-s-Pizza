@@ -1,224 +1,217 @@
-.basket{
-    display: flex;
-    margin: 70px auto;
-    max-width: 800px;
-    border-radius: 10px;
-    box-shadow: 0 20px 30px rgba(12, 12, 12, 0.8);
-    flex-direction: column;
-    position: relative;
+.basket {
+  display: flex;
+  margin: 70px auto;
+  max-width: 800px;
+  border-radius: 10px;
+  box-shadow: 0 20px 30px rgba(12, 12, 12, 0.8);
+  flex-direction: column;
+  position: relative;
 }
-.basketHeader{
-background-color: #D3D3D3;
-font-family: 'Oxygen', sans-serif;
-font-weight: 300;
-font-size: 28px;
-border-bottom: 2px black solid;
-border-top: 2px black solid;
-text-align: center;
-margin-bottom: 60px;
-}
-
-.title{
-
-    text-align: center;
-    font-family: 'Oxygen', sans-serif;
-    font-weight: 700;
-    font-size: 38px;
+.basketHeader {
+  background-color: #d3d3d3;
+  font-family: "Oxygen", sans-serif;
+  font-weight: 300;
+  font-size: 28px;
+  border-bottom: 2px black solid;
+  border-top: 2px black solid;
+  text-align: center;
+  margin-bottom: 60px;
 }
 
-.img{
-    width: 90px;
-    height: 60px;
-    box-shadow: 10px 10px 10px rgba(12, 12, 12, 0.3);
-    transform: rotate(-5deg);
-    transition: 0.3s;
+.title {
+  text-align: center;
+  font-family: "Oxygen", sans-serif;
+  font-weight: 700;
+  font-size: 38px;
 }
-.addPizzas{
-    font-family: 'Oxygen', sans-serif;
-    font-weight: 700;
-    font-size: 28px;
-    text-decoration: none;
-    color: black;
-    text-shadow: 1px 1px 1px #cec8c8ab;
-    background-color: rgb(224, 178, 178);
-    border-radius: 20px 20px;
-    width: 240px;
+
+.img {
+  width: 90px;
+  height: 60px;
+  box-shadow: 10px 10px 10px rgba(12, 12, 12, 0.3);
+  transform: rotate(-5deg);
+  transition: 0.3s;
+}
+.addPizzas {
+  font-family: "Oxygen", sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  text-decoration: none;
+  color: black;
+  text-shadow: 1px 1px 1px #cec8c8ab;
+  background-color: rgb(224, 178, 178);
+  border-radius: 20px 20px;
+  width: 240px;
   position: absolute;
   text-align: center;
-    right: 20px;
-    top: 180px;
-    animation-duration: 2s;
-    animation-name: animation;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    
+  right: 20px;
+  top: 180px;
+  animation-duration: 2s;
+  animation-name: animation;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
-@keyframes animation{
-    from{
-        transform: rotate(2deg);
-    }
-    to{
-        transform: rotate(-2deg);
-    }
+@keyframes animation {
+  from {
+    transform: rotate(2deg);
+  }
+  to {
+    transform: rotate(-2deg);
+  }
 }
-.addPizzas:hover{
-    opacity: 0.9;
-}
-
-.img:hover{
-    box-shadow: 10px 10px 20px rgba(12, 12, 12, 0.5);
-    transition: 0.3s;
-    }
-.goods{
-    margin-left: 30px;
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction:row;
-    align-items: center;
-    justify-content: space-between;
+.addPizzas:hover {
+  opacity: 0.9;
 }
 
-.name{
-    margin-left: 50px;
-    font-family: 'Oxygen', sans-serif;
-    font-weight: 700;
-    font-size: 18px;
+.img:hover {
+  box-shadow: 10px 10px 20px rgba(12, 12, 12, 0.5);
+  transition: 0.3s;
+}
+.goods {
+  margin-left: 30px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.buttons{
-    display: flex;
-    background-color: #D3D3D3;
-    width: 90px;
-    justify-content: space-between;
-    border-radius: 20px 20px;
-    align-items: center;
-    font-family: 'Oxygen', sans-serif;
-    font-weight: 700;
+.name {
+  margin-left: 50px;
+  font-family: "Oxygen", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
 }
 
-.button_plus{
-    border:none;
-    background-color: #D3D3D3;
-    border-radius: 20px 20px;
-    background-image: url(../../images/plus-8-16.png);
-    width: 18px;
-    height: 17px;
-    background-repeat: no-repeat;
-    margin-right: 5px;
+.buttons {
+  display: flex;
+  background-color: #d3d3d3;
+  width: 90px;
+  justify-content: space-between;
+  border-radius: 20px 20px;
+  align-items: center;
+  font-family: "Oxygen", sans-serif;
+  font-weight: 700;
 }
-.button_plus:hover{
-cursor: pointer;
-opacity: 0.3;
+
+.button_plus {
+  border: none;
+  background-color: #d3d3d3;
+  border-radius: 20px 20px;
+  background-image: url(../../images/plus-8-16.png);
+  width: 18px;
+  height: 17px;
+  background-repeat: no-repeat;
+  margin-right: 5px;
 }
-.button_minus:hover{
-    cursor: pointer;
-    opacity: 0.3;
-    }
-.button_minus{
-    border:none;
-    background-color: #D3D3D3;
-    border-radius: 20px 20px;
-    background-image: url(../../images/minus-7-16.png);
-    width: 18px;
-    height: 17px;
-    background-repeat: no-repeat;
-    
-    margin-left: 5px;
+.button_plus:hover {
+  cursor: pointer;
+  opacity: 0.3;
 }
-.button_delete{
-    margin: 0 10px 0 20px;
-    border:none;
-    background-color: black;
-    border-radius: 20px;
-    background-image: url(../../images/delete-16.png);
-    width: 25px;
-    height: 25px;
-    background-size: 17px;
-    background-repeat: no-repeat;
+.button_minus:hover {
+  cursor: pointer;
+  opacity: 0.3;
+}
+.button_minus {
+  border: none;
+  background-color: #d3d3d3;
+  border-radius: 20px 20px;
+  background-image: url(../../images/minus-7-16.png);
+  width: 18px;
+  height: 17px;
+  background-repeat: no-repeat;
+
+  margin-left: 5px;
+}
+.button_delete {
+  margin: 0 10px 0 20px;
+  border: none;
+  background-color: black;
+  border-radius: 20px;
+  background-image: url(../../images/delete-16.png);
+  width: 25px;
+  height: 25px;
+  background-size: 17px;
+  background-repeat: no-repeat;
   background-position: center;
 }
-.button_delete:hover{
-    cursor: pointer;
-    opacity: 0.8;
-    }
-.flex{
-    display: flex;
-    align-items: center;
+.button_delete:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+.flex {
+  display: flex;
+  align-items: center;
 }
 
-.cost{
-    font-family: 'Oxygen', sans-serif;
-    font-weight: 700;
-    margin-right: 40px;
+.cost {
+  font-family: "Oxygen", sans-serif;
+  font-weight: 700;
+  margin-right: 40px;
 }
-.total{
-    font-family: 'Oxygen', sans-serif;
-    font-weight: 700;
-    text-align: center;
-    margin: 20px auto 20px;
- 
+.total {
+  font-family: "Oxygen", sans-serif;
+  font-weight: 700;
+  text-align: center;
+  margin: 20px auto 20px;
 }
-.formArea{
-    display: flex;
+.formArea {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  margin: 30px 40px;
+}
+.label {
+  font-family: "Oxygen", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  margin-top: 20px;
+}
+.input {
+  margin-top: 20px;
+  border: none;
+  border-bottom: 1px solid black;
+}
+.button {
+  transition: 0.7s;
+  font-family: "Oxygen", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  width: 90px;
+  margin: 30px 0 30px;
+  border: none;
+  box-shadow: 1px 1px 1px #7e7979e5;
+  color: black;
+  background-color: white;
+}
+.button:hover {
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  transition: 0.7s;
+}
+@media screen and (max-width: 620px) {
+  .goods {
     flex-direction: column;
-    width: 400px;
-    margin: 30px 40px;
-}
-.label{
-    font-family: 'Oxygen', sans-serif;
-    font-weight: 700;
-    font-size: 16px;
+    margin-left: 5px;
+  }
+  .flex {
+    display: flex;
+    justify-content: space-around;
+    width: 300px;
     margin-top: 20px;
+    justify-content: space-around;
+  }
+  .input {
+    width: 270px;
+  }
+  .formArea {
+    margin: 5px 5px;
+  }
 }
-.input{
-    margin-top: 20px;
-border:none;
-border-bottom: 1px solid black;
+
+@media screen and (max-width: 500px) {
+  .basketHeader {
+    margin-bottom: 100px;
+  }
 }
-.button{
-    transition: 0.7s;
-    font-family: 'Oxygen', sans-serif;
-    font-weight: 700;
-    font-size: 16px;
-    width: 90px;
-    margin: 30px 0 30px;
-    border: none;
-    box-shadow: 1px 1px 1px #7e7979e5;
-    color: black;
-    background-color: white;
-    }
-    .button:hover{
-        cursor: pointer;
-        background-color: black;
-        color: white;
-        transition: 0.7s;
-    }
-    @media screen and (max-width: 620px) {
-        .goods{
-            flex-direction: column;
-            margin-left: 5px;
-        }
-        .flex{
-            display: flex;
-            justify-content: space-around;
-            width: 300px;
-            margin-top: 20px;
-justify-content: space-around;
-        }
-        .input{
-            width: 270px;  
-        }
-        .formArea{
-
-            margin: 5px 5px;
-        }
-            }
-
-
-
-
-    @media screen and (max-width: 500px) {
-.basketHeader{
-            margin-bottom: 100px;
-        };
-    }

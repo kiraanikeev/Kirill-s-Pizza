@@ -1,77 +1,74 @@
-.main{
-    background-image: url("../../images/pizzaHome.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 800px;
-    margin-top: 25px;
-    display: flex;
-    flex-direction: column;
+.main {
+  background-image: url("../../images/pizzaHome.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 800px;
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
 }
 
-
-.title{
-    font-size: 48px;
-    font-family: 'Oxygen', sans-serif;
-font-weight: 700;
-text-shadow: 1px 1px 1px #050404e5;
-backdrop-filter: blur(2px);
-position: relative;
-margin-top: 130px;
-margin-left: 70%;
-max-width: 270px;
-margin-right: 20px;
+.title {
+  font-size: 48px;
+  font-family: "Oxygen", sans-serif;
+  font-weight: 700;
+  text-shadow: 1px 1px 1px #050404e5;
+  backdrop-filter: blur(2px);
+  position: relative;
+  margin-top: 130px;
+  margin-left: 70%;
+  max-width: 270px;
+  margin-right: 20px;
 }
 
-.subtitle{
-    font-size: 18px;
-    font-family: 'Oxygen', sans-serif;
-    font-weight: 700;
-    text-shadow: 1px 1px 1px #050404e5;
-    backdrop-filter: blur(2px);
-    margin-left: 65%;
-    margin-top: 0px;
-    max-width: 350px;
-    margin-right: 20px;
+.subtitle {
+  font-size: 18px;
+  font-family: "Oxygen", sans-serif;
+  font-weight: 700;
+  text-shadow: 1px 1px 1px #050404e5;
+  backdrop-filter: blur(2px);
+  margin-left: 65%;
+  margin-top: 0px;
+  max-width: 350px;
+  margin-right: 20px;
 }
-.button{
-font-family: 'Oxygen', sans-serif;
-font-weight: 700;
-text-decoration: none;
-position: relative;
-font-size: 1.25rem;
-color:black;
-padding: 20px 30px;
-margin: 32px;
-border: 3px solid black;
-width: 100px;
-text-align: center;
-text-shadow: 1px 1px 1px #050404e5;
-backdrop-filter: blur(2px);
-margin-left: 70%;
-transition: 0.7s;
+.button {
+  font-family: "Oxygen", sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  position: relative;
+  font-size: 1.25rem;
+  color: black;
+  padding: 20px 30px;
+  margin: 32px;
+  border: 3px solid black;
+  width: 100px;
+  text-align: center;
+  text-shadow: 1px 1px 1px #050404e5;
+  backdrop-filter: blur(2px);
+  margin-left: 70%;
+  transition: 0.7s;
 }
 
-.button:hover{
-    border: 3px solid rgb(255, 255, 255);
-    background: black;
-    color: white;
-    transition: 0.7s;
-    
+.button:hover {
+  border: 3px solid rgb(255, 255, 255);
+  background: black;
+  color: white;
+  transition: 0.7s;
 }
-@media screen and (max-width: 700px){
-.button{
+@media screen and (max-width: 700px) {
+  .button {
     margin-left: 10%;
-}
   }
+}
 
-
-@media screen and (max-width: 500px){
-    .title{
+@media screen and (max-width: 500px) {
+  .title {
     margin-left: 55%;
     max-width: 150px;
-    }
-    
-    .subtitle{
-        margin-left: 10%;
-    }
   }
+
+  .subtitle {
+    margin-left: 10%;
+  }
+}
