@@ -31,7 +31,7 @@ function App() {
       <BasketContext.Provider value={{ basket, setBasket }}>
         <Navbar />
         <Switch>
-          <Route exact path="/home" component={Home} />
+          <Route exact path="/" component={Home} />
           <Route path="/menu" component={Menu} />
           <Route path="/about" component={About} />
           <Route path="/contacts" component={Contacts} />

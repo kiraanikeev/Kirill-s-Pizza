@@ -18,7 +18,7 @@ function Navbar() {
       <section className={styles.navbar}>
         <div className={styles.logo}></div>
         <div className={styles.links}>
-          <NavLink to="/home" className={styles.link}>
+          <NavLink to="/" className={styles.link}>
             Home
           </NavLink>
           <NavLink to="/menu" className={styles.link}>
@@ -54,7 +54,7 @@ function Navbar() {
       >
         <div className={styles.links_hidden}>
           <NavLink
-            to="/home"
+            to="/"
             className={styles.link_hidden}
             onClick={() => setClicked(!clicked)}
           >
