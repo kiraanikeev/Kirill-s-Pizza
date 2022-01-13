@@ -49,6 +49,7 @@
 .textarea {
   background-color: lavender;
   border: none;
+  resize: none;
 }
 .button {
   transition: 0.7s;

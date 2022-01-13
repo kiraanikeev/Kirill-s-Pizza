@@ -14,8 +14,8 @@ function App() {
   const [basket, setBasket] = useState([]);
 
   useEffect(() => {
-    const save = localStorage.getItem("basket");
-    const loadedBasket = JSON.parse(save);
+    const get = localStorage.getItem("basket");
+    const loadedBasket = JSON.parse(get);
     if (loadedBasket) {
       setBasket(loadedBasket);
     }
@@ -31,12 +31,12 @@ function App() {
       <BasketContext.Provider value={{ basket, setBasket }}>
         <Navbar />
         <Switch>
-          <Route exact path="/" component={Home} />
+          <Route exact path="/home" component={Home} />
           <Route path="/menu" component={Menu} />
           <Route path="/about" component={About} />
           <Route path="/contacts" component={Contacts} />
           <Route path="/basket" component={Basket} />
-          <Redirect to="/" />
+         
         </Switch>
       </BasketContext.Provider>
       <Footer />
