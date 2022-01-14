@@ -36,7 +36,7 @@ function App() {
           <Route path="/about" component={About} />
           <Route path="/contacts" component={Contacts} />
           <Route path="/basket" component={Basket} />
-         
+          <Redirect to="/" />
         </Switch>
       </BasketContext.Provider>
       <Footer />
